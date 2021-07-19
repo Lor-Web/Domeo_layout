@@ -1,0 +1,50 @@
+.get-job {
+  margin-bottom: 96px;
+}
+
+.get-job__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.get-job__list-num {
+  padding: 3px;
+  position: absolute;
+  top: -20px;
+  background: $color-white;
+}
+
+.get-job__list-item {
+  margin-right: 10px;
+  position: relative;
+  padding: 25px 25px 20px;
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+  border: 1px solid $color-yellow;
+  border-radius: 4px;
+  transition: all 0.5s;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 3px 17px -8px rgba(82, 81, 38, 0.34);
+  }
+}
+
+.get-job__list-item-text {
+  max-width: 200px;
+}
+
+// MEDIA /////////////////////////
+
+@media (max-width: (1200px)) {
+  .get-job__list {
+    margin: auto;
+    max-width: 800px;
+  }
+
+  .get-job__list-item {
+    margin-bottom: 20px;
+  }
+}

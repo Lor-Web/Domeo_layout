@@ -1,0 +1,17 @@
+@mixin btn-transparent {
+  padding: 6px 15px;
+  text-align: center;
+  color: $color-blue;
+  border: 2px solid $color-blue;
+  border-radius: 8px;
+  transition: all .3s ease;
+
+
+  &:hover {
+    @include desktop {
+      color: $color-white;
+      background-color: $color-blue;
+    }
+  }
+
+}

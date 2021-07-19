@@ -1,0 +1,19 @@
+@mixin domeo-btn {
+  padding: 10px 25px;
+  text-align: center;
+  font-weight: 700;
+  line-height: 22.4px;
+  color: $color-white;
+  background-color: $color-blue;
+  border-radius: 8px;
+  box-shadow: 4px 12px 40px rgba(47, 128, 237, 0.35);
+  transition: all .3s ease;
+
+
+  &:hover {
+    @include desktop {
+      transform: scale(1.01);
+    }
+  }
+
+}

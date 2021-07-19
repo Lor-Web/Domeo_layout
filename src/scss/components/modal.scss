@@ -1,0 +1,59 @@
+.fixed-overlay {
+  display: none;
+  position: fixed;
+  overflow: auto;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+}
+
+.modal {
+  position: absolute;
+  padding: 35px 20px 22px;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  border-radius: 12px;
+  background-color: #ffffff;
+  left: 50%;
+  top: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+
+  svg {
+    position: absolute;
+    top: 2%;
+    right: 3%;
+    cursor: pointer;
+  }
+
+  .form {
+    align-items: center;
+    justify-content: center;
+
+    .form__inputs {
+      margin-bottom: 5%;
+    }
+  }
+}
+
+.modal-description {
+  max-width: 310px;
+  margin-bottom: 5%;
+}
+
+// MEDIA /////////////////////////
+
+@media (max-width: (500px)) {
+  .modal {
+    & input {
+      width: 200px;
+      height: 50px;
+    }
+  }
+}

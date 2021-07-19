@@ -1,0 +1,45 @@
+<div class="fixed-overlay" data-visible="false">
+  <div class="modal">
+    <svg class="close-modal" width="17" height="17">
+      <use xlink:href="img/sprite.svg#close"></use>
+    </svg>
+    <p class="modal-description">
+      Оставьте ваши контактные данные и наш менеджер свяжется с вами в течение
+      30 минут
+    </p>
+    <form class="form">
+      <div class="form__name form__inputs">
+        <label class="form-label" for="name">
+          Введите ваше имя
+        </label>
+        <input
+          type="text"
+          name="name"
+          class="form-input"
+          placeholder="Например, Алексей"
+        />
+      </div>
+      <div class="form__phone form__inputs">
+        <label class="form-label" for="phone">
+          Введите ваш телефон
+        </label>
+        <input
+          type="tel"
+          name="phone"
+          class="form-input"
+          placeholder="+7 (___) ___ - __ - __"
+        />
+      </div>
+      <div class="form__buttons">
+        <button class="btn-form btn-blue btn-reset">
+          Получить постоянную работу
+        </button>
+        <p class="form__buttons-description">
+          Нажимая на кнопку, вы даёте согласие на обработку персональных данных
+          и соглашаетесь c
+          <a href="#" class="description-link">политикой конфиденциальности</a>
+        </p>
+      </div>
+    </form>
+  </div>
+</div>

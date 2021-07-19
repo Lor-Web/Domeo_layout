@@ -1,0 +1,70 @@
+.foot-form {
+  margin-bottom: 96px;
+}
+
+.foot-form__content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.foot-form__content__info {
+  max-width: 720px;
+  display: flex;
+  flex-direction: column;
+
+  & ul {
+    margin: 0 0 68px 0;
+  }
+}
+
+.content__info-title {
+  margin-bottom: 32px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+.info-list-item {
+  padding: 10px 5px 7px 60px;
+  font-size: 20px;
+  background-image: url('/img/faq.png');
+  background-repeat: no-repeat;
+
+  &:not(:last-child) {
+    margin-bottom: 16px;
+  }
+}
+
+.foot-form__content-form {
+  & .form {
+    height: 100%;
+    flex-direction: column;
+
+    & input {
+      height: 52px;
+    }
+  }
+}
+
+.content-form-title {
+  max-width: 380px;
+  text-align: center;
+}
+
+// MEDIA /////////////////////////
+
+@media (max-width: (1160px)) {
+  .foot-form__content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    & .form__inputs {
+      margin-bottom: 20px;
+    }
+  }
+
+  .content-form-title {
+    margin-bottom: 20px;
+  }
+}

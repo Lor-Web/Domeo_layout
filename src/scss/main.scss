@@ -1,0 +1,18 @@
+// @import 'vars'; если используете scss-переменные - подключите сюда vars, но удалите root из _vars.scss
+
+@import './vars';
+@import 'mixins/mini';
+@import '_mixins.scss';
+@import './mixins/breakpoint';
+@import './components/header';
+@import './components/hero';
+@import './components/quiz';
+@import './components/get-job';
+@import './components/up-form';
+@import './components/media';
+@import './components/foot-form';
+@import './components/contacts';
+@import './components/footer';
+
+// UI
+@import './components/modal';
