@@ -47,6 +47,12 @@
   margin-bottom: 5%;
 }
 
+.request {
+  & p {
+    font-size: 24px;
+  }
+}
+
 // MEDIA /////////////////////////
 
 @media (max-width: (500px)) {
